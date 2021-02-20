@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torchvision.models as models
-from torchsummary import summary
 
 class Inception(nn.Module):
 	def __init__(self, dataset, pretrained=True):

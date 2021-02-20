@@ -19,7 +19,8 @@ from tensorboardX import SummaryWriter
 parser = argparse.ArgumentParser()
 parser.add_argument("--config_path", type=str)
 
-
+# python preprocessing/preprocessingESC.py --csv_file /home/purnima/appdir/Github/DATA/ESC-50-master/meta/esc50.csv --data_dir /home/purnima/appdir/Github/DATA/ESC-50-master/audio/ --store_dir /home/purnima/appdir/Github/esc-50-classification/Audio-Classification/spectrograms/ --sampling_rate 44100
+# python train.py --config_path config/esc_densenet.json
 def train(model, device, data_loader, optimizer, loss_fn):
     model.train()
     loss_avg = utils.RunningAverage()
